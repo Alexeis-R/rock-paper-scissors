@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <div class="header-content">
+        <h1>Rock Paper Scissors</h1>
+        <div class="score-board">
+          <p>Score</p>
+          <p id="score">0</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="choices">
+        <button id="paper">
+          <img src="./images/icon-paper.svg" alt="Papier">
+        </button>
+        <button id="scissors">
+          <img src="./images/icon-scissors.svg" alt="Ciseaux">
+        </button>
+        <button id="rock">
+          <img src="./images/icon-rock.svg" alt="Pierre">
+        </button>
+      </div>
+      <div class="result">
+        <p id="result-text"></p>
+      </div>
+      <div class="picked" id="picked">
+        <div class="picked-choice">
+          <p>YOU PICKED</p>
+          <div id="player-choice" class="choice-button"></div>
+        </div>
+        <div class="picked-choice">
+          <p>THE HOUSE PICKED</p>
+          <div id="computer-choice" class="choice-button"></div>
+        </div>
+      </div>
+      <div class="result-display" id="result-display">
+        <p id="result-message"></p>
+        <button id="play-again" class="play-again-button">Play Again</button>
+      </div>
+    </main>
+    <footer>
+      <button class="rules-button" id="rules-button">RULES</button>
+    </footer>
+  </div>
+
+  <div class="modal" id="rules-modal">
+    <div class="modal-content">
+      <span class="close-button" id="close-button">&times;</span>
+      <h2>RULES</h2>
+      <img src="./images/image-rules.svg" alt="Rules">
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Alexeis-R">ROCHA Alexeis</a>.
+  </div>
+</body>
+</html>
